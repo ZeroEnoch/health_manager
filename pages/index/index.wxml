@@ -22,8 +22,22 @@
 <view style="height: 230rpx;"></view>
 
 <!-- 底部输入框 -->
-<view class="input_box">
+<!-- <view class="input_box">
   <input type="text" confirm-type="send" bindconfirm="{{status==0?'pressSendButton':''}}" value="{{userInput}}" bindinput="getUserInput" placeholder="请输入..." auto-height="true"/>
+  <view class="send_button" wx:if="{{status==0}}" bindtap="pressSendButton">发送</view>
+  <view class="send_button" wx:if="{{status==1}}" style="background-color: gray;" >发送</view>
+</view> -->
+<view class="input_box">
+  <textarea
+    class="text_box"
+    placeholder="请输入..." 
+    auto-height="true" 
+    maxlength="200"
+    confirm-type="send" 
+    bindconfirm="{{status==0?'pressSendButton':''}}"
+    value="{{userInput}}"
+    bindinput="getUserInput"
+  /> 
   <view class="send_button" wx:if="{{status==0}}" bindtap="pressSendButton">发送</view>
   <view class="send_button" wx:if="{{status==1}}" style="background-color: gray;" >发送</view>
 </view>

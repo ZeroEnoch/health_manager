@@ -76,6 +76,15 @@
   background-color: #f6f6ff;
   justify-content: space-evenly;
 }
+/* 输入框文字部分 */
+.text_box{
+  padding: 15rpx 25rpx;
+  border: 1rpx solid gray;
+  border-top-left-radius: 15rpx;
+  border-bottom-left-radius: 15rpx;
+  width: 75%;
+  background-color: #f6f6ff;
+}
 /* 发送按钮 */
 .send_button{
   background-color: #1891e2;
@@ -89,15 +98,7 @@
   border-bottom-right-radius: 15rpx;
   width: 15%;
 }
-/* 输入框内部 */
-input{
-  padding: 15rpx 25rpx;
-  border: 1rpx solid gray;
-  border-top-left-radius: 15rpx;
-  border-bottom-left-radius: 15rpx;
-  width: 75%;
-  background-color: #f6f6ff;
-}
+
 
 /* 功能按钮框 */
 .menu_list{

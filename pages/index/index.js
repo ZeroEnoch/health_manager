@@ -6,7 +6,7 @@ Page({
   data: {
     messages: [],
     userInput:"",
-    menuList:['清空对话', '我的预约', '我的报告'],
+    menuList:['清空对话', '我的预约', '我的档案'],
     content:"",
     status:0, //0表示用户可以操作，1表示机器人正发消息，用户不可以发
     status_test:1
@@ -15,9 +15,13 @@ Page({
   //获取用户输入的内容
   getUserInput(e){
     let userInput=e.detail.value;
-    this.setData({
+    if (userInput[userInput.length-1] == "\n") {
+      this.pressSendButton()
+    } else {
+      this.setData({
       userInput
-    })
+      })
+    }
   },
 
   //用户点击发送
