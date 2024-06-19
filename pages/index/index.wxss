@@ -1,0 +1,123 @@
+/* 页面背景 */
+/* .page{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-image: url('https://pic4.zhimg.com/v2-b8fef943b62981de8aeffa23185f86bf_r.jpg?source=1940ef5c');
+} */
+
+
+
+/* 历史对话内容*/
+/* 头像 */
+.image{
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 10rpx;
+}
+/* 对话框 */
+.messages{
+  margin: 0rpx 10rpx 0rpx 10rpx;
+}
+
+.messages .item{
+  margin-bottom: 20rpx;
+  display: flex;
+  flex-direction: column;
+}
+/* 用户 */
+.user{
+  display: grid;
+  grid-template-columns: repeat(2,auto auto);
+  align-self: flex-end;
+}
+/* 机器人 */
+.assistant{
+  display: grid;
+  align-self: flex-start;
+  grid-template-columns: repeat(2,auto auto);
+}
+
+.content{
+  background-color: rgba(147, 231, 185, 0.3);
+  color: black;
+  padding: 10rpx;
+  max-width: 560rpx;
+  font-size: 12pt;
+  border-radius: 10rpx;
+}
+
+.user .content{
+  margin-right: 10rpx;
+  align-self: flex-start;
+}
+
+.assistant .content{
+  margin-left: 10rpx;
+  align-self: flex-start;
+}
+
+
+/* 输入框 */
+/* input{
+  border: 1rpx solid gray;
+} */
+.input_box{
+  position: fixed;
+  width: 100%;
+  bottom: 60rpx;
+  display: flex;
+  padding: 10rpx 0rpx 80rpx 0rpx;
+  background-color: #f6f6ff;
+  justify-content: space-evenly;
+}
+/* 发送按钮 */
+.send_button{
+  background-color: #1891e2;
+  color: #f6f6ff;
+  font-size: 12pt;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 15rpx;
+  border-bottom-right-radius: 15rpx;
+  width: 15%;
+}
+/* 输入框内部 */
+input{
+  padding: 15rpx 25rpx;
+  border: 1rpx solid gray;
+  border-top-left-radius: 15rpx;
+  border-bottom-left-radius: 15rpx;
+  width: 75%;
+  background-color: #f6f6ff;
+}
+
+/* 功能按钮框 */
+.menu_list{
+  position: fixed;
+  width: 100%;
+  bottom: 0rpx;
+  display: flex;
+  padding: 10rpx 0rpx 60rpx 0rpx;
+  background-color: #f6f6ff;
+  justify-content: space-evenly;
+}
+.menu_item{
+  background-color: #c3def1;
+  border-radius: 10rpx;
+  color: black;
+  font-size: 12pt;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rpx;
+  width: 25%;
+}
