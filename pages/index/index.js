@@ -72,7 +72,7 @@ Page({
       status:1//设为1表示机器人正在发消息
     })
     
-    const urlPost = 'https://langchain-practice-gcr-test-pgiuhpyvia-uc.a.run.app/openai/invoke';
+    const urlPost = 'http://101.37.70.57:8080/openai/invoke';
     const dataPost = {
       input: contentUser,
       config: {},
